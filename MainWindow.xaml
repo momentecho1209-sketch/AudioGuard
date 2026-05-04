@@ -1,7 +1,7 @@
 <Window x:Class="AudioGuard.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="AudioGuard 設定" Width="480" Height="520"
+        Title="AudioGuard 設定" Width="480" Height="600"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
         Closing="Window_Closing">
 
@@ -60,7 +60,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <ListBox x:Name="LstApplied" Grid.Row="0"/>
+                <ListBox x:Name="LstApplied" Grid.Row="0" MinHeight="100"/>
                 <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,4,0,0">
                     <Button Content="選択を削除 (再適用対象に戻す)" Click="BtnRemoveApplied_Click"/>
                     <Button Content="全クリア" Click="BtnClearApplied_Click"/>

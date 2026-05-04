@@ -53,6 +53,13 @@ dotnet publish -c Release -r win-x64 --self-contained true -o ./dist
 - Windows Core Audio API (COM interop)
 - `IAudioSessionManager2.RegisterSessionNotification` によるリアルタイム監視
 
+## 変更履歴
+
+### v1.0.1
+- 設定画面の「適用済みプロセス」リストが狭すぎて内容が表示されない問題を修正
+  - ウィンドウの高さを拡大 (520 → 600)
+  - リストボックスに最低高さ (100px) を設定
+
 ## ライセンス
 
 MIT License
